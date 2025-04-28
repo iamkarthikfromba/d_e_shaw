@@ -68,7 +68,7 @@ def style_excel(df):
 
 st.title("Cadence Report Generator 📊")
 
-uploaded_file = st.file_uploader("Upload the Master Excel file", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload the Verified Master Roster file", type=["xlsx"])
 
 if uploaded_file:
     df_master = pd.read_excel(uploaded_file)
