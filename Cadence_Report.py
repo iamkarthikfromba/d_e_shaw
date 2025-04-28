@@ -34,9 +34,9 @@ def style_excel(df):
             bottom=Side(style='thin')
         )
 
-        header_font = Font(name='Calibri', size=11, bold=True)
-        regular_font = Font(name='Calibri', size=11)
-        header_fill = PatternFill(start_color='#DBEBF7', end_color='#DBEBF7', fill_type="solid")
+        header_font = Font(name='Calibri', size=10, bold=True)
+        regular_font = Font(name='Calibri', size=10)
+        header_fill = PatternFill(start_color='D9E1F2', end_color='D9E1F2', fill_type="solid")
 
         for row in worksheet.iter_rows():
             for cell in row:
@@ -68,7 +68,7 @@ def style_excel(df):
 
 st.title("Cadence Report Generator 📊")
 
-uploaded_file = st.file_uploader("Upload the Verified Master Roster file", type=["xlsx"])
+uploaded_file = st.file_uploader("Upload the Master Excel file", type=["xlsx"])
 
 if uploaded_file:
     df_master = pd.read_excel(uploaded_file)
@@ -300,9 +300,9 @@ if uploaded_file:
 st.markdown("""
 ### Note:
 - The naming convention for reporting purpose needs to be changed by the user.
-- The date columns need to be converted to  short date in Excel.
+- The date columns need to be converted to date in Excel.
 - The report on Contractors needs to have an additional column with contractor company.
-- The "FTE Gender Headcount HRIS Report to Finance" report and the "Contractor HRIS Report to Finance" have one more column "Work Status" which needs to be removed.
+- The "FTE Gender Headcount HRIS Report to Finance" report and the "Contractor HRIS Report to Finance" have one more column, Work Status, which needs to be removed.
 
 ---
 
