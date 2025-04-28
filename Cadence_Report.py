@@ -302,7 +302,7 @@ st.markdown("""
 - The naming convention for reporting purpose needs to be changed by the user.
 - The date columns need to be converted to date in Excel.
 - The report on Contractors needs to have an additional column with contractor company.
-- The "FTE Gender Headcount HRIS Report to Finance" report and the "Contractor HRIS Report to Finance" have one more column, Work Status, which needs to be removed.
+- The "FTE Gender Headcount HRIS Report to Finance" report and the "Contractor HRIS Report to Finance" have one more column "Work Status" which needs to be removed.
 
 ---
 
