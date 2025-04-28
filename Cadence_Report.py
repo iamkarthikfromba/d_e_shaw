@@ -34,8 +34,8 @@ def style_excel(df):
             bottom=Side(style='thin')
         )
 
-        header_font = Font(name='Calibri', size=10, bold=True)
-        regular_font = Font(name='Calibri', size=10)
+        header_font = Font(name='Calibri', size=11, bold=True)
+        regular_font = Font(name='Calibri', size=11)
         header_fill = PatternFill(start_color='D9E1F2', end_color='D9E1F2', fill_type="solid")
 
         for row in worksheet.iter_rows():
